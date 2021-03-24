@@ -12,10 +12,16 @@ public class test {
 
         ArrayList list = new ArrayList<>();
         //add witch to list
-        list.add(Wizard.getInstance("Level 2",16));
+        list.add(Witch.getInstance("Level 2",16));
 
         //add wizard to list
-        list.add(Wizard.getInstance("level 2",55));
+        int i=1;
+        while( i <151){
+            list.add(Wizard.getInstance("level "+i,55));
+            i++;
+        }
+
+
 
         System.out.println(list);
 
