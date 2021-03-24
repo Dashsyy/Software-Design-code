@@ -17,6 +17,7 @@ public class Witch {
             if (instances.containsKey(level) == false) {
                 Witch witch = new Witch(level);
                 witch.spell(dmg);
+                instances.put(level,witch);
             } else {
                 return instances.get(level);
             }
